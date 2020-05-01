@@ -10,6 +10,12 @@
     "express": "~4.14.0",
     "mongoose": "~4.7.0",
     "nodegit": "~0.16.0",
-    "rmdir": "~1.2.0"
-  }
+    "rmdir": "~1.2.0",
+    "snyk": "^1.316.1"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
